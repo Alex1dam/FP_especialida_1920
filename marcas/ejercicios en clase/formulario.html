@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset='utf-8'/>
+<title> El corte perfecto
+</title>
+</head>
+<body bgcolor="#E2F8F5">
+<h1> <center> Inscripcion de clientes </center> </h1>
+<br/>
+<center>
+<table border="1" width="700" height="120">
+<tr>
+<th colspan ="1" rowspan="2"> Tipos de industria </th>
+<th colspan ="3">Orden por facturacion en</th>
+</tr>
+<tr>
+<td> España </td>
+<td> Europa </td>
+<td> America </td>
+
+</tr>
+<tr>
+<td> Textil</td>
+<td> 1 </td>
+<td> 3 </td>
+<td> 5 </td>
+</tr>
+</table> </center>
+<form id="f_dm1e" method="post" actions="#" enctype="multipart/form-data"/>
+  <fieldset>
+    <legend> Datos personales</legend>
+    Nombre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Introduzca su nombre" autofocus><br>
+    Apellido &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Introduzca su Apellido"><br>
+	Pais &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" placeholder="Introduzca su Pais"><br>
+	 Continente <input type="text" name="continente"
+    pattern="^(europa|america|Europa|America)$" placeholder="Introduzca su continente"> </br>
+	Ciudad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Introduzca su ciudad"><br>
+    Email  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Introduzca su email"></br>
+  </fieldset></br>
+</form>
+<form id="f_dm1e_2" method="post" actions="#" enctype="multipart/form-data"/>
+  <fieldset>
+     <legend> Gustos textiles y envio</legend>
+	 Preferencia de ropa </br>
+	 <input type ="radio" name="preferencia" id="1" value="desportes"/> Masculina<br/>
+	 <input type ="radio" name="preferencia" id="1" value="desportes"/> Femenina<br/>
+	 <input type ="radio" name="preferencia" id="1" value="desportes"/> Unisex<br/>
+	 Tallas usadas en el hogar </br>
+	 <input type="checkbox" name="id_1" value="talla"/> XS<br/>
+     <input type="checkbox" name="id_2" value="talla"/> S<br>
+	 <input type="checkbox" name="id_2" value="talla"/> M<br>
+	 <input type="checkbox" name="id_2" value="talla"/> L<br>
+	 <input type="checkbox" name="id_2" value="talla"/> XL<br>
+	 <input type="checkbox" name="id_2" value="talla"/> XXL<br>
+	 <input type="checkbox" name="id_2" value="talla"/> XXXL<br>
+	 Prendas preferidas
+	 <select>
+     <option value="volvo">Pantalones</option>
+     <option value="saab">Faldas</option>
+     <option value="mercedes">Blusas</option>
+     <option value="audi">Cazadoras</option>
+	 <option value="audi">Abrigos</option>
+     </select> </br> </br> </br>
+	 Envio<select id="menu" multiple size="1">
+     <optgroup label="Recogida en mano"> 
+     <option value="o1"> En tienda</option>
+	 <option value="o1"> En oficina de correos </option>
+     </optgroup>
+     <optgroup label="Envio a domicilio">
+     <option value="o2" > Por avion </option> 
+     <option value="o3"> Por barco </option> 
+     <option value="o4"> Por tren </option>
+     <option value="o5"> Por camion </option>
+     </optgroup>
+     </select> 
+	 </fieldset></br>
+	     </form>
+		 <form id="f_dm1e_3" method="post" actions="#" enctype="multipart/form-data"/>
+  <fieldset>
+     <legend> Observaciones</legend>
+	 <textarea id="12314" name="123" cols="90" rows="30" value="Observaciones" style="overflow:auto;resize:none" required ></textarea>
+	   </fieldset>
+	     </form></br>
+<input type= "submit" value="Enviar datos a central"/>
+<input type= "reset" value="Borrar datos del formulario"/> 
+<br/></br>
+</form>
+</body>
